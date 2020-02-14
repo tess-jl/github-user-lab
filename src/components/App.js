@@ -1,6 +1,7 @@
 import React from 'react';
-import Search from './search/Search';
+import GitHubViewer from '../containers/gitHubViewer/GitHubViewer';
+
 
 export default function App() {
-  return <Search />;
+  return <GitHubViewer />;
 }

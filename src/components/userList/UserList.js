@@ -4,7 +4,7 @@ import { useDispatch, useSelector } from 'react-redux';
 
 const UserList = () => {
   const dispatch = useDispatch();
-  // const loading = useSelector();
+  const loading = useSelector();
 
   // const repos = useSelector();
   // const userInfo = useSelector(); //for getting userPic, followers, following
@@ -13,7 +13,7 @@ const UserList = () => {
   //   dispatch(fetchRepos());
   // }, []);
 
-  // if(loading) return <Loading />;
+  if(loading) return <Loading />;
 
   // const reposFromUser = repos.map(repo => (
   //   <li key={repo.id}>
