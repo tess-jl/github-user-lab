@@ -3,7 +3,7 @@ import { useDispatch } from 'react-redux';
 import { getUserInfo } from '../../selectors/searchUserSelectors';
 
 const Search = () => {
-  const [searchTerm, setSearchTerm] = useState('');
+  const [usernameToSearch, setUsernameToSearch] = useState('');
   const dispatch = useDispatch();
 
   const handleSubmit = () => {
@@ -13,7 +13,7 @@ const Search = () => {
 
   return (
     <form onSubmit={handleSubmit}>
-      <input type="text" value={searchTerm} placeholder="GitHub User" onChange={({ target }) => setSearchTerm(target.value) }/> 
+      <input type="text" value={usernameToSearch} placeholder="GitHub User" onChange={({ target }) => setUsernameToSearch(target.value) }/> 
       <button>search</button>
     </form>
   );
