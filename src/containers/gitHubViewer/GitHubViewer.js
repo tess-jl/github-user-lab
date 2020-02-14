@@ -1,15 +1,16 @@
 import React from 'react';
-import PropTypes from 'prop-types';
+import Search from '../../components/search/Search';
+import UserList from '../../components/userList/UserList';
 
 const GitHubViewer = () => {
 
+
   return (
-
+    <main> 
+      <Search /> 
+      <UserList /> 
+    </main>
   );
-}
-
-GitHubViewer.propTypes = {
-
 };
 
 export default GitHubViewer; 
