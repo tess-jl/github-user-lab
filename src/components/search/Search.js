@@ -1,13 +1,14 @@
 import React, { useState } from 'react';
-// import { useDispatch } from 'react-redux';
+import { useDispatch } from 'react-redux';
+import { getUserInfo } from '../../selectors/searchUserSelectors';
 
 const Search = () => {
   const [searchTerm, setSearchTerm] = useState('');
-  // const dispatch = useDispatch();
+  const dispatch = useDispatch();
 
   const handleSubmit = () => {
     event.preventDefault();
-    // dispatch(actionName());
+    dispatch(getUserInfo());
   };
 
   return (
