@@ -1,16 +1,16 @@
 import { FETCH_REPOS, FETCH_REPOS_LOADING } from '../actions/repoListActions';
 
 const initialState = {
-  loading: true, 
+  repoListLoading: true, 
   repos: []
 };
 
 export default function reducer(state = initialState, action) {
   switch(action.type) {
     case FETCH_REPOS_LOADING:
-      return { ...state, loading: true };
+      return { ...state, reposListLoading: true };
     case FETCH_REPOS: 
-      return { ...state, loading: false, repos: action.payload };
+      return { ...state, reposListLoading: false, repos: action.payload };
 
     default: 
       return state;

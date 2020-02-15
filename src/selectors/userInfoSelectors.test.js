@@ -3,8 +3,10 @@ import { isLoadingUserInfo, getUserInfo } from './userInfoSelectors';
 describe('search user selectors tests', () => {
   it('selects the user info loading state', () => {
     const state = {
-      loading: true, 
-      user: null
+      userInfo: {
+        loading: true, 
+        user: null
+      }
     };
 
     const loading = isLoadingUserInfo(state);
@@ -13,9 +15,11 @@ describe('search user selectors tests', () => {
 
   it('selects the user state', () => {
     const state = {
-      loading: false, 
-      user: {
-        username: 'tess-jl'
+      userInfo: {
+        loading: false,
+        user: {
+          username: 'tess-jl'
+        }
       }
     };
 

@@ -19,9 +19,9 @@ const UserInfo = () => {
         <p>Followers: {userInfo.followers}</p>
         <p>Following: {userInfo.following}</p>
       </section>
-      {/* <section>
+      <section>
         <RepoList /> 
-      </section> */}
+      </section>
     </>
   );
 };

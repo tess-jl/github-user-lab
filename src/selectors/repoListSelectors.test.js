@@ -1,10 +1,12 @@
-import { selectRepoListLoading, selectReposList } from './repoListSelectors';
+import { selectRepoListLoading, selectRepoList } from './repoListSelectors';
 
 describe('repo list selectors tests', () => {
   it('selects the repo list loading state', () => {
     const state = {
-      loading: true, 
-      repos: []
+      repoList: {
+        repoListLoading: true, 
+        repos: []
+      }
     };
 
     const loading = selectRepoListLoading(state);
@@ -13,13 +15,15 @@ describe('repo list selectors tests', () => {
 
   it('selects the user state', () => {
     const state = {
-      loading: false, 
-      repos: [{
-        name: 'repoName'
-      }]
+      repoList: {
+        repoListLoading: false, 
+        repos: [{
+          name: 'repoName'
+        }]
+      }
     };
 
-    const user = selectReposList(state);
+    const user = selectRepoList(state);
     expect(user).toEqual([{
       name: 'repoName'
     }]);

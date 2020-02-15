@@ -2,10 +2,11 @@ import React from 'react';
 import { useSelector } from 'react-redux';
 import Loading from '../loading/Loading'; 
 import Repo from '../repo /Repo';
+import { selectReposListLoading, selectReposList } from '../../selectors/repoListSelectors';
 
 const RepoList = () => {
-  const loading = useSelector(selectLoadingRepoList);
-  const userRepos = useSelector(selectUserRepos);
+  const loading = useSelector(selectReposListLoading);
+  const userRepos = useSelector(selectReposList);
 
   if(loading) return <Loading />;
 

@@ -5,13 +5,13 @@ describe('tests for searchUserReducer', () => {
   it('handles the repo list loading state', () => {
     const action = { type: FETCH_REPOS_LOADING };
     const initialState = {
-      loading: false, 
+      reposListLoading: false, 
       repos: []
     };
     const newState = reducer(initialState, action);
 
     expect(newState).toEqual({
-      loading: true, 
+      reposListLoading: true, 
       repos: []
     });
   });
@@ -25,13 +25,13 @@ describe('tests for searchUserReducer', () => {
       ]
     };
     const initialState = {
-      loading: true, 
+      reposListLoading: true, 
       repos: []
     };
     const newState = reducer(initialState, action);
 
     expect(newState).toEqual({
-      loading: false, 
+      reposListLoading: false, 
       repos: [
         { key: 'repoOne' }, 
         { key: 'repoTwo' }

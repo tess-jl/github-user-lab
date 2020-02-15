@@ -1,14 +1,14 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-const Repo = ({ repoName }) => (
+const Repo = ({ name }) => (
   <section>
-    <p>{repoName}</p>
+    <p>{name}</p>
   </section>
 );
 
 Repo.propTypes = {
-  repoName: PropTypes.string.isRequired
+  name: PropTypes.string.isRequired
 };
 
 export default Repo; 
