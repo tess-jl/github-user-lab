@@ -1,4 +1,4 @@
-import reducer from './searchUserReducer';
+import reducer from './userInfoReducer';
 import { FETCH_USER, FETCH_USER_LOADING } from '../actions/userInfoActions';
 
 describe('tests for searchUserReducer', () => {
