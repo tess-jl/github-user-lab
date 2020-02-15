@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { useDispatch } from 'react-redux';
-import { getUserInfo } from '../../selectors/searchUserSelectors';
+import { fetchUserAction } from '../../actions/searchUserActions';
+
 
 const Search = () => {
   const [usernameToSearch, setUsernameToSearch] = useState('');
@@ -8,7 +9,7 @@ const Search = () => {
 
   const handleSubmit = () => {
     event.preventDefault();
-    dispatch(getUserInfo());
+    dispatch(fetchUserAction(usernameToSearch));
   };
 
   return (
