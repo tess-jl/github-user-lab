@@ -1,4 +1,4 @@
-import { isLoadingUserInfo, getUserInfo } from './searchUserSelectors';
+import { isLoadingUserInfo, getUserInfo } from './userInfoSelectors';
 
 describe('search user selectors tests', () => {
   it('selects the user info loading state', () => {

@@ -1,7 +1,7 @@
 import React from 'react';
 import { useSelector } from 'react-redux';
 import Loading from '../loading/Loading';
-import { isLoadingUserInfo, getUserInfo } from '../../selectors/searchUserSelectors';
+import { isLoadingUserInfo, getUserInfo } from '../../selectors/userInfoSelectors';
 import RepoList from '../repoList/RepoList';
 
 const UserInfo = () => {
