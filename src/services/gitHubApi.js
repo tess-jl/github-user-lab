@@ -9,3 +9,5 @@ const request = path => {
 };
 
 export const fetchUser = username => request(`/${username}`);
+export const fetchUserRepos = username => request(`/${username}/repos`);
+
