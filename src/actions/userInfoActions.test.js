@@ -1,4 +1,4 @@
-import { fetchUserAction, FETCH_USER, FETCH_USER_LOADING } from './searchUserActions';
+import { fetchUserAction, FETCH_USER, FETCH_USER_LOADING } from './userInfoActions';
 jest.mock('../services/gitHubApi.js');
 
 describe('tests for search user actions', () => {

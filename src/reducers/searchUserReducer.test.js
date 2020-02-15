@@ -1,5 +1,5 @@
 import reducer from './searchUserReducer';
-import { FETCH_USER, FETCH_USER_LOADING } from '../actions/searchUserActions';
+import { FETCH_USER, FETCH_USER_LOADING } from '../actions/userInfoActions';
 
 describe('tests for searchUserReducer', () => {
   it('handles the search user loading state', () => {

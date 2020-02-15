@@ -33,3 +33,19 @@ export const fetchUser = () => {
     updated_at: '2020-02-13T21:20:45Z'
   });
 }; 
+
+
+export const fetchUserRepos = () => {
+  return Promise.resolve([{
+    //note actual shape of data is much larger than this
+    id: 215832103,
+    node_id: 'MDEwOlJlcG9zaXRvcnkyMTU4MzIxMDM=',
+    name: 'adventure-quiz',
+    full_name: 'tess-jl/adventure-quiz',
+    private: false,
+    owner: {
+      login: 'tess-jl',
+      id: 52361640
+    }
+  }]);
+}; 

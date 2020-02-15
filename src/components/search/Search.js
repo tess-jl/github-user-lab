@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { useDispatch } from 'react-redux';
-import { fetchUserAction } from '../../actions/searchUserActions';
+import { fetchUserAction } from '../../actions/userInfoActions';
 
 
 const Search = () => {

@@ -1,4 +1,4 @@
-import { FETCH_USER, FETCH_USER_LOADING } from '../actions/searchUserActions';
+import { FETCH_USER, FETCH_USER_LOADING } from '../actions/userInfoActions';
 
 const initialState = {
   loading: true, 

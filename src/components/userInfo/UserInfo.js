@@ -2,19 +2,13 @@ import React from 'react';
 import { useSelector } from 'react-redux';
 import Loading from '../loading/Loading';
 import { isLoadingUserInfo, getUserInfo } from '../../selectors/searchUserSelectors';
+import RepoList from '../repoList/RepoList';
 
-const UserList = () => {
+const UserInfo = () => {
   const loading = useSelector(isLoadingUserInfo);
   const userInfo = useSelector(getUserInfo);
-  // const userRepos = useSelector();
 
   if(loading) return <Loading />;
-
-  // const reposFromUser = userRepos.map(repo => (
-  //   <li key={repo.id}>
-  //     <Repo {...repo} />
-  //   </li>
-  // ));
 
   return (
     <>
@@ -25,12 +19,11 @@ const UserList = () => {
         <p>Followers: {userInfo.followers}</p>
         <p>Following: {userInfo.following}</p>
       </section>
-
-      {/* <ul>
-        {reposFromUser}
-      </ul> */}
+      {/* <section>
+        <RepoList /> 
+      </section> */}
     </>
   );
 };
 
-export default UserList; 
+export default UserInfo; 

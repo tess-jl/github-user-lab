@@ -1,6 +1,6 @@
 import React from 'react';
 import Search from '../../components/search/Search';
-import UserList from '../../components/userList/UserList';
+import UserList from '../../components/userInfo/UserInfo';
 
 const GitHubViewer = () => {
 
