@@ -34,7 +34,6 @@ export const fetchUser = () => {
   });
 }; 
 
-
 export const fetchUserRepos = () => {
   return Promise.resolve([{
     //note actual shape of data is much larger than this
