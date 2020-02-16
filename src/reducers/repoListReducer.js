@@ -8,9 +8,9 @@ const initialState = {
 export default function reducer(state = initialState, action) {
   switch(action.type) {
     case FETCH_REPOS_LOADING:
-      return { ...state, reposListLoading: true };
+      return { ...state, repoListLoading: true };
     case FETCH_REPOS: 
-      return { ...state, reposListLoading: false, repos: action.payload };
+      return { ...state, repoListLoading: false, repos: action.payload };
 
     default: 
       return state;

@@ -1,6 +1,6 @@
 import { combineReducers } from 'redux';
 import userInfo from './userInfoReducer';
-import repoList from './postDetailReducer';
+import repoList from './repoListReducer';
 
 export default combineReducers({
   userInfo,
