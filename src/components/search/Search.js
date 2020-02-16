@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { useDispatch } from 'react-redux';
 import { fetchUserAction } from '../../actions/userInfoActions';
+import { fetchUserRepos } from '../../services/gitHubApi';
 
 
 const Search = () => {
@@ -10,6 +11,7 @@ const Search = () => {
   const handleSubmit = () => {
     event.preventDefault();
     dispatch(fetchUserAction(usernameToSearch));
+    dispatch(fetchUserRepos(usernameToSearch));
   };
 
   return (
