@@ -11,4 +11,3 @@ export const fetchUserAction = username => dispatch => {
       payload: user
     }));
 };
-
