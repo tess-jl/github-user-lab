@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { useDispatch } from 'react-redux';
 import { fetchUserAction } from '../../actions/userInfoActions';
-import { fetchUserRepos } from '../../services/gitHubApi';
+import { fetchReposAction } from '../../actions/repoListActions';
 
 
 const Search = () => {
@@ -11,7 +11,7 @@ const Search = () => {
   const handleSubmit = () => {
     event.preventDefault();
     dispatch(fetchUserAction(usernameToSearch));
-    dispatch(fetchUserRepos(usernameToSearch));
+    dispatch(fetchReposAction(usernameToSearch));
   };
 
   return (
