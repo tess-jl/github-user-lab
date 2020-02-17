@@ -8,7 +8,7 @@ const Repo = ({ name }) => (
 );
 
 Repo.propTypes = {
-  name: PropTypes.string.isRequired
+  name: PropTypes.any
 };
 
 export default Repo; 
